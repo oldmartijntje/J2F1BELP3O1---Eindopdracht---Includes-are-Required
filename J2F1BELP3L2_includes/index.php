@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <h1>tets</h1>
 	<!-- laad hier via php je header in (vanuit je includes map) -->
-
+    <?php require "pages/survive the internet.php"; ?>
 
 	<!-- laad hier via php de juiste contentpagina in (vanuit de pages map) in. Welke geselecteerd moet worden kun je uit de URL halen (URL_Params).-->
 
