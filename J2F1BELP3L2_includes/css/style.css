@@ -1,0 +1,43 @@
+.fullWidth {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.pageHeader {
+    background: #333;
+    padding: 0;
+}
+
+body {
+    margin: 0px
+}
+
+.marginBottom {
+    margin-bottom: 1rem;
+}
+
+.topPadding {
+    padding-top: 1rem;
+}
+
+.bottomPadding {
+    padding-bottom: 1rem;
+}
+
+.noTopMargin,
+.noTopMargin * {
+    margin-top: 0px;
+}
+
+.noBottomMargin,
+.noBottomMargin * {
+    margin-bottom: 0px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+}

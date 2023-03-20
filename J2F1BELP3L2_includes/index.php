@@ -7,9 +7,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <?php require 'includes/header.php'; ?>
     <h1>tets</h1>
 	<!-- laad hier via php je header in (vanuit je includes map) -->
-    <?php require "pages/survive the internet.php"; ?>
+    <a href="?subject=PHP&web=W3schools.com">Test $GET</a>
+    <?php if (isset($_GET['subject'])) {
+        echo "Study " . $_GET['subject'] . " at " . $_GET['web'];
+    }
+    ?>
 
 	<!-- laad hier via php de juiste contentpagina in (vanuit de pages map) in. Welke geselecteerd moet worden kun je uit de URL halen (URL_Params).-->
 
