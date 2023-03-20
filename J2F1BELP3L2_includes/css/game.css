@@ -230,3 +230,7 @@
 .error {
     color: red;
 }
+
+a {
+    background-color: #333;
+}

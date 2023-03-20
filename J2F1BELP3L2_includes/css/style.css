@@ -35,9 +35,20 @@ body {
     margin-bottom: 0px;
 }
 
+.paddingLeft {
+    padding-left: 1rem;
+}
+
 .title {
     font-size: 2rem;
     font-weight: 700;
-    color: #fff;
-    display: block;
+}
+
+.whiteText {
+    color: #ffffff;
+}
+
+body {
+    background-color: #212121;
+    color: #ffffff;
 }

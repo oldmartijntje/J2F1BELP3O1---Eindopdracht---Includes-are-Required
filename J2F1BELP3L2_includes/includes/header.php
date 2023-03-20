@@ -12,14 +12,11 @@ om te bepalen welke inhoud er ingeladen moet worden in je html
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="noMargin">
-    <div class="pageHeader topPadding noTopMargin bottomPadding fullWidth">
-        
-        <div class="menu">
-            <a href="">MEOW</a>
-            <a href="?page=home" class="menuItem">Home</a>
-            <a href="?page=about" class="menuItem">About</a>
-            <a href="?page=contact" class="menuItem">Contact</a>
-        </div>
+    <div class="pageHeader topPadding noTopMargin bottomPadding fullWidth menu paddingLeft">
+        <a href="?page=home" class="title menuItem whiteText">MEOW</a>
+        <a href="?page=home" class="menuItem whiteText">Home</a>
+        <a href="?page=404" class="menuItem whiteText">404</a>
+        <a href="?page=Freddit" class="menuItem whiteText">Freddit</a>
     </div>
 </body>
 </html>

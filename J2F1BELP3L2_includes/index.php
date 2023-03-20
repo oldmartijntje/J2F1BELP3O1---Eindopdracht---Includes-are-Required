@@ -8,11 +8,18 @@
 </head>
 <body>
     <?php require 'includes/header.php'; ?>
-    <h1>tets</h1>
-	<!-- laad hier via php je header in (vanuit je includes map) -->
-    <a href="?subject=PHP&web=W3schools.com">Test $GET</a>
-    <?php if (isset($_GET['subject'])) {
-        echo "Study " . $_GET['subject'] . " at " . $_GET['web'];
+
+    
+    <?php if (isset($_GET['page'])) {
+        if ($_GET['page'] == 'home') {
+            require 'pages/home.php';
+        } elseif ($_GET['page'] == 'Freddit') {
+            require 'pages/survive the internet.php';
+        } else {
+            require 'pages/404notFound.php';
+        }
+    } else {
+        require 'pages/home.php';
     }
     ?>
 
