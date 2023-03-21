@@ -65,3 +65,64 @@ body {
     padding: 0.5rem 1rem;
     display: inline-block;
 }
+
+.page {
+    margin-left: 1rem;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Styles for the homeTitle */
+.homeTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Styles for the homeTitleSubtext */
+.homeTitleSubtext {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Styles for the homeText */
+.homeText {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Styles for the articleHeaderText */
+.articleHeaderText {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* Styles for the articleImage */
+.articleImage {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+/* Styles for the articleImageSubtext */
+.articleImageSubtext {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Styles for the inTextLink */
+.inTextLink {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* Styles for the randomText */
+.randomText {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}

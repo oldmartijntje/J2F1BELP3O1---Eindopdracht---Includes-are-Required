@@ -14,7 +14,7 @@ om te bepalen welke inhoud er ingeladen moet worden in je html
 <body class="noMargin hiddenOverflow">
     <div class="pageHeader topPadding noTopMargin bottomPadding fullWidth menu paddingLeft">
         <a href="?page=home" class="websiteTitle menuItem whiteText">MEOW</a>
-        <a href="?page=home" data-value="Home" class="menuItem whiteText magic">Home</a>
+        <a href="?page=home" data-value="Home" class="menuItem whiteText magic homeTitle">Home</a>
         <a href="?page=404" data-value="404" class="menuItem whiteText magic">404</a>
         <a href="?page=Freddit" data-value="Freddit" class="menuItem whiteText magic fredditTitle">Freddit</a>
         <a href="?page=PWV" data-value="Pressurized Water Vapor" class="menuItem whiteText fancy-text magic">Pressurized water vapor</a>

@@ -3,22 +3,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Lab 2 - Includes en require</title>
+  <title>good website</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <?php require 'includes/header.php'; ?>
-
+    <?php $redirectDict = array(
+        'home' => 'pages/home.php',
+        'Freddit' => 'pages/survive the internet.php',
+        'PWV' => 'pages/gamePicker.php',
+        'time' => 'pages/time.php',
+        '404' => 'pages/404notFound.php',
+        'FredditSecret' => 'pages/secret1.php');
+        ?>
     
     <?php if (isset($_GET['page'])) {
-        if ($_GET['page'] == 'home') {
-            require 'pages/home.php';
-        } elseif ($_GET['page'] == 'Freddit') {
-            require 'pages/survive the internet.php';
-        } elseif ($_GET['page'] == 'PWV') {
-            require 'pages/gamePicker.php';
-        } elseif ($_GET['page'] == 'time') {
-            require 'pages/time.php';
+        if (array_key_exists($_GET['page'], $redirectDict)) {
+            require $redirectDict[$_GET['page']];
         } else {
             require 'pages/404notFound.php';
         }
