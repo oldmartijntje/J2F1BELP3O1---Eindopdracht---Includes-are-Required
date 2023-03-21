@@ -8,13 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .homeTitle {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="page">
-        <div>
+        <div class="homeHeader">
             <h1 class="homeTitle">Home</h1>
             <h3 class="homeTitleSubtext">This is the home page</h3>
-            <p class="homeText">This page is a totally normal page and doesn't have anything suspisious at all.</p>
+            <p class="homeTitleSubtext">This page is a totally normal page and doesn't have anything suspisious at all.</p>
         </div>
         <article class="article">
             <h2 class="articleHeaderText">Freddit</h2>
@@ -33,7 +40,7 @@
                 <p class="articleImageSubtext">Your average burn</p>
             </div>
         </article>
-        <h3 class="randomText">That was fun wasn't it?</h3>
+        <!-- <h3 class="randomText">That was fun wasn't it?</h3> -->
         <article class="article">
             <h2 class="articleHeaderText">Pressurized Water Vapor</h2>
             <p class="homeText">The HTML and JS code provided represents a webpage that displays a list of games and allows the user to filter the games by genre or rating, add them to a shopping cart, and calculate the total price of the items in the cart.</p>

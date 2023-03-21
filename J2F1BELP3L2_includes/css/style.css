@@ -69,13 +69,8 @@ body {
 .page {
     margin-left: 1rem;
     font-family: 'Helvetica Neue', sans-serif;
-}
-
-/* Styles for the homeTitle */
-.homeTitle {
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Styles for the homeTitleSubtext */
@@ -125,4 +120,24 @@ body {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
+}
+
+.imageWithSubtext {
+    margin-bottom: 2rem;
+    width: 50%;
+    max-width: 50%;
+}
+
+.article {
+    max-width: 100%;
+    background-color: #333;
+    margin-right: 2rem;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.homeHeader {
+    width: 100%;
+    flex: 4;
 }
