@@ -24,6 +24,16 @@ var questions = {
     "thoughts": ["What do you guys think about when trying to sleep?", "Whats something you wish you knew earlier?!", "What is your favorite memory of a grandparent?", "what movie fan theory actually sounds plausible?", "What is the biggest lie you've told and got successfully away with?", "Reddit, what's your idea of the perfect day?", "Reddit, what seemed like a good idea at the time?", "A possible way the world could end", "How do you think the world will end?", "Something you would want to happen.", "Describe a possible future.", "A memory taken out of context", "Describe a scene from a movie", "Something you would do if the law didn't exist for an hour.", "Something to prevent at all costs", "Something you would change if you could time travel?", "Best movie scene?", "What do you want to happen in the future", "What's the weirdest dream you've ever had?", "What's the most unsettling dream you've ever had?", "What's something you thought would be great but wasn't?"]
 };
 
+var answers = {
+    "location": ["the twin towers", "Philedelfia", "USA", "Underneath the toilet bowl", "your mom", "in my bed", "on mars", "nazi germany", "USSR", "area 51", "my basement"],
+    "people": ["my girlfriend", "Mario", "Donald Trump", "Joe Bidome", "Santa", "Myself", "Nobody", "your mom"],
+    "moment": ["september 11 2001", "Yesterday", "Today", "a week ago", "never :c", "500BC", "2020", "last christmas :c", "when I was born"],
+    "numbers": [Math.floor(Math.random() * 100)],
+    "activity": ["playing hide and seek", "playing truth or dare", "having a stare contest", "getting drunk", "watching you", "opening a door and closing it afterwards", "eating cereal", "eating breakfast", "dying", "cooking", "swimming", "recording youtube videos", "taking your virginity", "drinking beer", "waking up", "petting cats", "watching disney movies", "binge watching the whole MCU", "hacking the fbi", "getting your IP adress", "watching hub videos", "pooping", "doing the dishes", "your mom", "playing minecraft", "playing fortnite", "playing roblox", "playing minecraft", "playing a boardgame", "strategizing on how to take over the tri-state area"],
+    "objects": ["my girlfriend", "a beard", "my fist", "dice", "bathtubs", "the whole raid shadow legends lore", "the bible", "plutonium", "uranium", "lasagna", "the bee movie", "your mom", "cheese", "pancake", "a lego brick", "your ugly face", "piss", "beer"],
+    "thoughts": ["death", "boobs", "how to use computers", "don't date kids", "how quantum mechanics work", "how to visualize the 4th dimension", "my girlfriend", "not to go on roblox"]
+}
+
 var typeIDName = "type";
 var answerIDName = "answer";
 var labelIDName = "label";
@@ -142,4 +152,13 @@ function deleteQuestions(index) {
     document.getElementById(formID(index, labelIDName)).remove();
 }
 
-changeAmount()
+function iAmNotFunny() {
+    assambler([[document.getElementById("invisibleSpan"), createElement("h1", ["notFunnyText", "formText"], '', "Yes you are not funny, We'll help you."), createElement("p", ["notFunnySubtext", "formText"], '', "This is Easteregg number 2.")]]);
+    amount = document.getElementById("questionAmountBox").value;
+    for (let index = 1; index < Number(amount) + 1; index++) {
+        document.getElementById(formID(index, "answer")).value = "Yes you are not funny, We'll help you.";
+    }
+}
+
+changeAmount();
+iAmNotFunny();

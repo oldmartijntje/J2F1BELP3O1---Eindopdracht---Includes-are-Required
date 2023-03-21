@@ -62,9 +62,10 @@
         <?php if (!($_POST == "" || $_POST == null) && (count(array_filter($_POST))!=count($_POST))) {
             echo "<h1 class='error'>* Please fill in the form </h1>";}
         ?>
-        <form method="post">
+        <form method="post" id="theForm">
             <input type="hidden" id="amount" name="amount" value="5" />
             <div id="questions" class="form">
+                <span id="invisibleSpan" class="noTopMargin"></span>
                 <label class="question" for="fname">Username:</label>
                 <input class="inputText" type="text" id="name" name="name" required><br>
             </div>

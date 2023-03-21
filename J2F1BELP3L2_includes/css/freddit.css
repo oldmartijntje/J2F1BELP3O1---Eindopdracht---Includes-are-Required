@@ -232,6 +232,19 @@
     color: red;
 }
 
+.formText {
+    background-color: #212121;
+}
+
 a {
     background-color: #333;
+}
+
+.notFunnySubtext,
+.notFunnyText {
+    color: #dc6e00;
+}
+
+.noTopMargin {
+    margin-top: 0;
 }
