@@ -11,7 +11,7 @@ om te bepalen welke inhoud er ingeladen moet worden in je html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="noMargin">
+<body class="noMargin hiddenOverflow">
     <div class="pageHeader topPadding noTopMargin bottomPadding fullWidth menu paddingLeft">
         <a href="?page=home" class="title menuItem whiteText">MEOW</a>
         <a href="?page=home" class="menuItem whiteText">Home</a>
