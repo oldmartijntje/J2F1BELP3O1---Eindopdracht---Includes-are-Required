@@ -17,6 +17,7 @@ om te bepalen welke inhoud er ingeladen moet worden in je html
         <a href="?page=home" class="menuItem whiteText">Home</a>
         <a href="?page=404" class="menuItem whiteText">404</a>
         <a href="?page=Freddit" class="menuItem whiteText">Freddit</a>
+        <a href="?page=PWV" class="menuItem whiteText">Pressurized water vapor</a>
     </div>
 </body>
 </html>

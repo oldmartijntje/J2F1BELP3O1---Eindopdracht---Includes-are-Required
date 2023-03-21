@@ -15,6 +15,8 @@
             require 'pages/home.php';
         } elseif ($_GET['page'] == 'Freddit') {
             require 'pages/survive the internet.php';
+        } elseif ($_GET['page'] == 'PWV') {
+            require 'pages/gamePicker.php';
         } else {
             require 'pages/404notFound.php';
         }

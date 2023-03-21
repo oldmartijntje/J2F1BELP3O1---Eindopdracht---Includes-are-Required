@@ -54,5 +54,5 @@ body {
 }
 
 .hiddenOverflow {
-    overflow: hidden;
+    overflow-x: hidden;
 }

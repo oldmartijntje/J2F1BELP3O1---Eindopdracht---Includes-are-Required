@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>formulier</title>
-    <link rel="stylesheet" type="text/css" href="css/game.css">
-    <script src="javascript/main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="css/freddit.css">
+    <script src="javascript/freddit1.js" defer></script>
 </head>
 
 <body>
@@ -51,7 +51,7 @@
     </script>
     <div class="page" id="fullPage">
     </div>
-    <script src="javascript/functions.js"></script>
+    <script src="javascript/freddit2.js"></script>
         <script>
             for (let index = 1; index < Number(amount)+1; index++) {
                 createPost(index, obj[formID(index, "type")], obj[formID(index, "answer")], document.getElementById("secondPage").dataset.value)
@@ -85,7 +85,7 @@
                 document.getElementById("questionAmountBox").value = obj["amount"];
                 document.getElementById("name").value = obj["name"];
             </script>
-            <script src="javascript/functions.js"></script>
+            <script src="javascript/freddit2.js"></script>
         <?php } ?>
     <?php } ?>
     </div>
