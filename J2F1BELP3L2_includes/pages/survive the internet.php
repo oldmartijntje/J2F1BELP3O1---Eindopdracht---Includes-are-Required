@@ -40,7 +40,7 @@
   
 <div class="content" id="content">
 <button id="sideBarToggle" class="marginBottom" onclick="sidebarClick()"><img id="sideBarToggleImg" class="logo grey" src="images/toggle.png" alt=""></button>
-<?php if ($_POST != "" && $_POST != null && count(array_filter($_POST))==count($_POST)){ ?>
+<?php if ($_POST != "" && $_POST != null && count(array_filter($_POST))==count($_POST) && array_key_exists(sprintf("answer%s",$_POST["amount"]),$_POST)){ ?>
     <span id="secondPage"></span><br>
     <script>
         var obj = JSON.parse('<?php echo json_encode($_POST) ?>');
@@ -60,7 +60,10 @@
         </script>
     <?php } else { ?>
         <?php if (!($_POST == "" || $_POST == null) && (count(array_filter($_POST))!=count($_POST))) {
-            echo "<h1 class='error'>* Please fill in the form </h1>";}
+            echo "<h1 class='error'>* Please fill in the form </h1>";
+            } else if (!($_POST == "" || $_POST == null) && !array_key_exists(sprintf("answer%s",$_POST["amount"]),$_POST)) {
+                echo sprintf("<h1 class='error'>* Please fill in the form<br>You tried to send a form with %s questions but no answers? </h1>", $_POST["amount"]);
+            }
         ?>
         <form method="post" id="theForm">
             <input type="hidden" id="amount" name="amount" value="5" />
