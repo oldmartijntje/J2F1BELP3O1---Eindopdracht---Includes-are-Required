@@ -38,7 +38,7 @@ var typeIDName = "type";
 var answerIDName = "answer";
 var labelIDName = "label";
 
-var amount = document.getElementById("amount").value;
+var amount = 5;
 var lastAmount = 0;
 var blocked = false;
 
@@ -106,23 +106,25 @@ function changeAmount() {
     }
     if (blocked) {
         return;
-    }
-    console.log(amount, lastAmount)
-    if (amount > lastAmount) {
-        for (let index = 1; index < Number(amount) + 1; index++) {
-            if (index > lastAmount) {
-                createQuestions(index);
+    } else {
+        console.log(amount, lastAmount)
+        if (amount > lastAmount) {
+            for (let index = 1; index < Number(amount) + 1; index++) {
+                if (index > lastAmount) {
+                    createQuestions(index);
+                }
+            }
+        } else if (Number(amount) < Number(lastAmount)) {
+            for (let index = 1; index < Number(lastAmount) + 1; index++) {
+                if (index > amount) {
+                    deleteQuestions(index);
+                }
             }
         }
-    } else if (Number(amount) < Number(lastAmount)) {
-        for (let index = 1; index < Number(lastAmount) + 1; index++) {
-            if (index > amount) {
-                deleteQuestions(index);
-            }
-        }
+        document.getElementById("amount").value = amount;
+        lastAmount = Number(amount);
     }
-    document.getElementById("amount").value = amount;
-    lastAmount = Number(amount);
+
 }
 
 function assambler(pieces = []) {
@@ -156,9 +158,10 @@ function iAmNotFunny() {
     assambler([[document.getElementById("invisibleSpan"), createElement("h1", ["notFunnyText", "formText"], '', "Yes you are not funny, We'll help you."), createElement("p", ["notFunnySubtext", "formText"], '', "This is Easteregg number 2.")]]);
     amount = document.getElementById("questionAmountBox").value;
     for (let index = 1; index < Number(amount) + 1; index++) {
-        document.getElementById(formID(index, "answer")).value = "Yes you are not funny, We'll help you.";
+        type = document.getElementById(formID(index, "type")).value;
+        document.getElementById(formID(index, "answer")).value = answers[type][Math.floor(Math.random() * answers[type].length)];
     }
+    return "Yep you are not, here is some help. Also this is a secret easter egg."
 }
 
 changeAmount();
-iAmNotFunny();
