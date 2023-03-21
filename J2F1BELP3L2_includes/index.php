@@ -17,6 +17,8 @@
             require 'pages/survive the internet.php';
         } elseif ($_GET['page'] == 'PWV') {
             require 'pages/gamePicker.php';
+        } elseif ($_GET['page'] == 'time') {
+            require 'pages/time.php';
         } else {
             require 'pages/404notFound.php';
         }

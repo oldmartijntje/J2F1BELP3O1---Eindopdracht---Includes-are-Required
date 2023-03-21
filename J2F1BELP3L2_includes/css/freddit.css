@@ -11,7 +11,8 @@
     background-color: #1a1a1b;
 }
 
-.title {
+.title,
+.fredditTitle {
     color: #656565;
 }
 
