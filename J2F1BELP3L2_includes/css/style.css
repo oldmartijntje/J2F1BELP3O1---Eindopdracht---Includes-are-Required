@@ -124,8 +124,12 @@ body {
 
 .imageWithSubtext {
     margin-bottom: 2rem;
-    width: 50%;
-    max-width: 50%;
+    /* width: 48%; */
+    margin-right: 1rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .article {
@@ -135,9 +139,23 @@ body {
     border-radius: 3rem;
     margin-bottom: 2rem;
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .homeHeader {
     width: 100%;
     flex: 4;
+}
+
+.imageRowDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fullImageRow {
+    /* width: 48%; */
+    max-width: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }

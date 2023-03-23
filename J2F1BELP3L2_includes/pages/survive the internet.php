@@ -46,7 +46,6 @@
         var obj = JSON.parse('<?php echo json_encode($_POST) ?>');
         amount = 0;
         amount = obj["amount"];
-        console.log(obj)
         document.getElementById("secondPage").setAttribute("data-value", obj["name"]);
     </script>
     <div class="page" id="fullPage">
@@ -84,7 +83,6 @@
                 var obj = JSON.parse('<?php echo json_encode($_POST) ?>');
                 amount = 0;
                 amount = obj["amount"];
-                console.log(obj)
                 document.getElementById("amount").value = obj["amount"];
                 document.getElementById("questionAmountBox").value = obj["amount"];
                 document.getElementById("name").value = obj["name"];

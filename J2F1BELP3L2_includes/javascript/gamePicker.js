@@ -340,11 +340,9 @@ for (let i = 0; i < games.length; i++) {
 
 function gameToCart(game) {
     if (cart.includes(game)) {
-        console.log("Game already in cart");
         snackbar("Game already in cart")
     } else {
         cart.push(game);
-        console.log(cart);
         snackbar(`Added ${game} to cart`)
     }
     showGamesInCart();
