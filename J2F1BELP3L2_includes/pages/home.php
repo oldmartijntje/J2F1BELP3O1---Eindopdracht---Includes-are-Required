@@ -72,6 +72,10 @@
                 </div>
             </div>
         </article>
+        <article class="article">
+            <h2 class="articleHeaderText">Clock</h2>
+            <p class="homeText">it's a clock</p>
+        </article>
     </div>
 </body>
 </html>

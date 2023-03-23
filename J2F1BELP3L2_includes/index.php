@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <script>
+        function notFound404() {
+            window.location.href = "?page=fsgsgsd";
+        }
+    </script>
     <?php require 'includes/header.php'; ?>
     <?php $redirectDict = array(
         'home' => 'pages/home.php',
@@ -14,6 +19,9 @@
         'PWV' => 'pages/gamePicker.php',
         'time' => 'pages/time.php',
         '404' => 'pages/404notFound.php',
+        'footer' => 'includes/footer.php',
+        'header' => 'includes/header.php',
+        'index' => 'index.php',
         'FredditSecret' => 'pages/secret1.php');
         ?>
     
@@ -27,12 +35,6 @@
         require 'pages/home.php';
     }
     ?>
-
-	<!-- laad hier via php de juiste contentpagina in (vanuit de pages map) in. Welke geselecteerd moet worden kun je uit de URL halen (URL_Params).-->
-
-	
-	<!-- laad hier via php je footer in (vanuit je includes map)-->
-
-
+    <?php require 'includes/footer.php'; ?>
 </body>
 </html>

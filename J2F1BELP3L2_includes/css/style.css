@@ -159,3 +159,14 @@ body {
     margin-right: 1rem;
     margin-left: 1rem;
 }
+
+.footer {
+    background-color: #333;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    position: sticky;
+    bottom: 0;
+}
