@@ -13,6 +13,7 @@
             font-size: 3rem;
             font-weight: 700;
             text-align: center;
+            color: #FF00BF;
         }
     </style>
 </head>
