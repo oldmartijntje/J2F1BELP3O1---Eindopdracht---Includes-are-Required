@@ -66,7 +66,7 @@
             <div class="content border padding" id="gameList"></div>
         </div>
 
-        <footer class="footer fancy-text">
+        <footer class="footer2 fancy-text lotOfBottomMargin">
             <h1>Footer</h1>
         </footer>
     </div>
@@ -81,6 +81,9 @@
             </div>
         </header>
         <div class="content border padding" id="gameListCartPage"></div>
+        <footer class="footer2 fancy-text lotOfBottomMargin">
+            <h1>Footer</h1>
+        </footer>
     </div>
     <div id="snackbar">Some text some message..</div>
 </body>

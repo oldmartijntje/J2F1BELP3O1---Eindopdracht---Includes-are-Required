@@ -49,7 +49,7 @@ body {
 }
 
 body {
-    background-color: #212121;
+    background-color: #030303;
     color: #ffffff;
 }
 
@@ -115,6 +115,10 @@ body {
     border-bottom: 1px solid #ffffff;
 }
 
+.inTextLink:hover {
+    color: #888;
+}
+
 /* Styles for the randomText */
 .randomText {
     font-size: 2rem;
@@ -160,13 +164,64 @@ body {
     margin-left: 1rem;
 }
 
+.glitchTextEffect {
+    font-family: "space Mono", monospace;
+}
+
 .footer {
     background-color: #333;
-    padding: 1rem;
+    color: #ddd;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-top: 2rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
     border-top-right-radius: 3rem;
     border-top-left-radius: 3rem;
     position: sticky;
     bottom: 0;
+}
+
+.footerHeader {
+    margin-bottom: 1rem;
+}
+
+.footerHeader h1 {
+    font-size: 2rem;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid #333;
+}
+
+.footerColumn {
+    flex: 1;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+    border-right: 1px solid #5a5a5a;
+}
+
+.footerColumn:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+.columnTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.columnText {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer * {
+    background-color: #333;
 }

@@ -248,3 +248,7 @@ body {
 .maxHeight {
     max-height: 100vh;
 }
+
+.lotOfBottomMargin {
+    margin-bottom: 15rem;
+}
