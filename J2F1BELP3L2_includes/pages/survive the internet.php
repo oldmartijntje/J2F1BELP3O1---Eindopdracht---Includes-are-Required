@@ -28,7 +28,7 @@
             <input type="number" class="marginLeft borderRadius marginBottom" value='5' style="width: 165px;" onchange="changeAmount()" id="questionAmountBox">
         </div>
     </div> 
-    <footer class="marginBottom footer">
+    <footer class="marginBottom ffooter">
         <a target="_blank" href="https://github.com/oldmartijntje" class="clickable sidebarItem">
             <div class="clickable sidebarItem">
                 <img src="images/oldmartijntje.png" class="logo clickable sidebarItem marginLeft borderRadius" alt="">

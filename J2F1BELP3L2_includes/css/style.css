@@ -172,7 +172,7 @@ body {
     background-color: #333;
     color: #ddd;
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 2rem;
@@ -224,4 +224,8 @@ body {
 
 .footer * {
     background-color: #333;
+}
+
+.pointer {
+    cursor: pointer;
 }

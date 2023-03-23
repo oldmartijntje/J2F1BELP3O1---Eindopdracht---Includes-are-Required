@@ -30,7 +30,8 @@
             </div>
             <div class="footerColumn">
                 <h1 class="columnTitle">Creator:</h1>
-                <p class="columnText glitchTextEffect" id="username" data-value="OldMartijntje" onclick="goToWebSearchByElementText('username')">OldMartijntje</p>
+                <p class="columnText glitchTextEffect pointer" id="username" data-value="OldMartijntje" onclick="goToWebSearchByElementText('username')">OldMartijntje</p>
+                <p class="whiteText"><a href="https://github.com/oldmartijntje" target="_blank" class="inTextLink">Github</a></p>
                 <script>
                     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
                     const ignoreString = ' .\n\r';
