@@ -168,7 +168,7 @@ body {
 }
 
 .footer {
-    background-color: #333;
+    background-color: #3b3b3b;
     color: #ddd;
     padding-top: 1rem;
     padding-bottom: 0rem;
@@ -222,7 +222,7 @@ body {
 }
 
 .footer * {
-    background-color: #333;
+    background-color: #3b3b3b;
 }
 
 .pointer {
