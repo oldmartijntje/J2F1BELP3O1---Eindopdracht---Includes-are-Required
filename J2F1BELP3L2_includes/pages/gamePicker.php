@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javascript/gamePicker.js" defer></script>
+<script src="javascript/gamePicker.js" defer></script>
     <link rel="stylesheet" href="css/gamePicker.css">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/ca1dbf1ecc.js" crossorigin="anonymous"></script>
-</head>
 
 <!-- Action,Sandbox,Simulation,FPS,RPG,Looter-shooter,Sport -->
 
-<body class="maxHeight">
+<div class="maxHeight">
     <header class="row">
         <img style="margin: 20px;" class="logo" src="images/steam2.0.png" alt="">
         <h1>
@@ -86,6 +78,5 @@
         </footer>
     </div>
     <div id="snackbar">Some text some message..</div>
-</body>
+</div>
 
-</html>

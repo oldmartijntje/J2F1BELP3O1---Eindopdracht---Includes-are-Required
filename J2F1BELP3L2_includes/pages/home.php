@@ -1,13 +1,4 @@
-<?php
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
     <style>
         .homeTitle {
             font-size: 3rem;
@@ -16,8 +7,6 @@
             color: #FF00BF;
         }
     </style>
-</head>
-<body>
     <div class="page">
         <div class="homeHeader">
             <h1 class="homeTitle">Home</h1>
@@ -78,5 +67,3 @@
             <p class="homeText">it's a clock</p>
         </article>
     </div>
-</body>
-</html>

@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>formulier</title>
-    <link rel="stylesheet" type="text/css" href="css/freddit.css">
+<link rel="stylesheet" type="text/css" href="css/freddit.css">
     <script src="javascript/freddit1.js" defer></script>
-</head>
-
-<body>
 <div class="sidebar" id="sidebar">
     <div class="sidebarContent">
         <header class="title">
@@ -74,7 +63,7 @@
             <input type="hidden" id="amount" name="amount" value="5" />
             <div id="questions" class="form">
                 <span id="invisibleSpan" class="noTopMargin"></span>
-                <label class="question" for="fname">Username:</label>
+                <label class="question" for="name">Username:</label>
                 <input class="inputText" type="text" id="name" name="name" required><br>
             </div>
             <input class="submit" type="submit">
@@ -102,4 +91,3 @@
         <?php } ?>
     <?php } ?>
     </div>
-</body>

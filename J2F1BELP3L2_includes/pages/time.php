@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/time.css">
-</head>
-
-<body>
+<link rel="stylesheet" type="text/css" href="css/time.css">
 <div id="fb-root"></div>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" nonce="i9yt1YVm"></script>
@@ -56,4 +45,4 @@
     <?php if ((int)date("H", time()) < 6) : ?>
         <html style="background-image: url('images/night.png');">
     <?php endif; ?>
-</body>
+
