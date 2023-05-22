@@ -1,12 +1,4 @@
 <link rel="stylesheet" href="css/style.css">
-    <style>
-        .homeTitle {
-            font-size: 3rem;
-            font-weight: 700;
-            text-align: center;
-            color: #FF00BF;
-        }
-    </style>
     <div class="page">
         <div class="homeHeader">
             <h1 class="homeTitle">Home</h1>
